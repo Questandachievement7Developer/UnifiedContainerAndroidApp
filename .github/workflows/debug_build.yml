@@ -6,6 +6,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Cache
+  uses: actions/cache@v1.1.2
+  with:
+    # A directory to store and save the cache
+    path: 
+    # An explicit key for restoring and saving the cache
+    key: 
+    # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
+    restore-keys: # optional
     - name: Clone repository
       uses: actions/checkout@v2
     - name: Build
@@ -16,3 +25,4 @@ jobs:
       with:
         name: termux-app
         path: ./app/build/outputs/apk/debug/app-debug.apk
+
