@@ -11,3 +11,8 @@ jobs:
     - name: Execute tests
       run: |
         ./gradlew test
+    - name: Store generated APK file
+      uses: actions/upload-artifact@v1
+      with:
+        name: termux-app
+        path: ./app/build/outputs/apk/debug/UCProxy.apk
