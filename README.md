@@ -1,11 +1,7 @@
 # Unified Container App (Android)
 ## Forked Version of Termux
-
-
-## Installation
-
-## Terminal resources
-
+> This is a proxy app for Unified Container App <br>
+[Unified Container Main Repo](https://github.com/Questandachievement7Developer/UnifiedContainer)
 ## Terminal emulators
 
 - VTE (libvte): Terminal emulator widget for GTK+, mainly used in gnome-terminal.
